@@ -13,10 +13,11 @@ module.exports = {
 
   	title			: { type: 'string' }, // Заголовок маршрута
   	description		: { type: 'JSON' },	
-  	// Полное описание маршрута: [tags, text, startPointName, endPointName, distance, duration, climb, level]
+  	// Полное описание маршрута: [ tags, text, startPointName, endPointName, distance, duration, climb, level ]
 
   	type			: { type: 'string' }, // Тип маршрута (город, деревня и тд)
-  	waypoints		: { type: 'JSON' }, // Точки по которым строится маршрут на карте
+  	waypoints		: { type: 'JSON' }, 
+    // Точки по которым строится маршрут на карте: [ startPoint {name, lon, lat}, endPoint {name, lon, lat}, waypoint1 {name, lon, lat} ]
 
   	comments		: { type: 'JSON' },
   	likes			: { type: 'string' },
