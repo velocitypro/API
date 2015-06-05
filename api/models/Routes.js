@@ -9,6 +9,23 @@ module.exports = {
 
   attributes: {
 
+  	authorID		: { type: 'string' },
+
+  	title			: { type: 'string' },
+  	description		: { type: 'JSON' },
+
+  	type			: { type: 'string' },
+  	waypoints		: { type: 'JSON' },
+
+  	comments		: { type: 'JSON' },
+  	likes			: { type: 'string' },
+  	ridesCounter	: { type: 'string' },
+  	views			: { type: 'string' },
+  	relatedRoutes	: { type: 'JSON' },
+
+  	status			: { type: 'string' },
+  	GUID			: { type: 'string' }
+  	
   }
 };
 
