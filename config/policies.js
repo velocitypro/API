@@ -28,6 +28,19 @@ module.exports.policies = {
 
   // '*': true,
 
+  '*': ['passport', ],
+ 
+  'auth': {
+    '*': ['passport']
+  },
+
+  RoutesController: {
+      // Apply the 'isLoggedIn' policy to the 'edit' action of 'ProfileController'
+      edit: 'sessionAuth',
+      // Apply the 'isAdmin' AND 'isLoggedIn' policies, in that order, to the 'create' action
+      create: 'sessionAuth'
+  }
+
   /***************************************************************************
   *                                                                          *
   * Here's an example of mapping some policies to run before a controller    *
