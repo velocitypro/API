@@ -2,7 +2,7 @@
 
 API находится api.velocity.pro
 
-GET /routes
+<h3>GET /routes</h3>
 Все маршруты, которые есть на Velocity 
 
 GET /routes/:id 
@@ -10,39 +10,39 @@ GET /routes/:id
 
 POST /routes 
 Параметры: 
-  0. authorID: string
+  authorID: string
   // ID автора маршрута
   
-  0.title: string
+  title: string
   // Заголовок маршрута
   
-  0.description: JSON
+  description: JSON
   // Полное описание маршрута: [ tags, text, startPointName, endPointName, distance, duration, climb, level ]
   
-  0.type: string
+  type: string
   // Тип маршрута (город, деревня и тд)
   
-  0.waypoints: JSON
+  waypoints: JSON
   // Точки по которым строится маршрут на карте: [ startPoint {name, lon, lat}, endPoint {name, lon, lat}, waypoint1 {name, lon, lat} ]
   
-  0.comments: JSON
+  comments: JSON
   // Код disqus
   
-  0.likes: string
+  likes: string
   // Количество лайков
   
-  0.ridesCounter: string
+  ridesCounter: string
   // Счетчик людей, которые катались по данному маршруту
   
-  0.views: string
+  views: string
   // Количество просмотров
   
-  0.relatedRoutes: JSON
+  relatedRoutes: JSON
   // ID похожих маршрутов
   
-  0.status: string
+  status: string
   // Статус маршрута (одобрен, забанен...)
   
-  0.GUID: string
+  GUID: string
   // Абсолютная ссылка на маршрут
 
