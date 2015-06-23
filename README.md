@@ -5,10 +5,10 @@ API находится api.velocity.pro
 <h3>GET /routes</h3>
 Все маршруты, которые есть на Velocity 
 
-GET /routes/:id 
+<h3>GET /routes/:id </h3>
 Конкретный маршрут по его ID
 
-POST /routes 
+<h3>POST /routes </h3>
 Параметры: 
   authorID: string
   // ID автора маршрута
