@@ -10,39 +10,39 @@ API находится api.velocity.pro
 
 <h3>POST /routes </h3>
 Параметры: 
-  authorID: string
+  - authorID: string
   // ID автора маршрута
   
-  title: string
+  - title: string
   // Заголовок маршрута
   
-  description: JSON
+  - description: JSON
   // Полное описание маршрута: [ tags, text, startPointName, endPointName, distance, duration, climb, level ]
   
-  type: string
+  - type: string
   // Тип маршрута (город, деревня и тд)
   
-  waypoints: JSON
+  - waypoints: JSON
   // Точки по которым строится маршрут на карте: [ startPoint {name, lon, lat}, endPoint {name, lon, lat}, waypoint1 {name, lon, lat} ]
   
-  comments: JSON
+  - comments: JSON
   // Код disqus
   
-  likes: string
+  - likes: string
   // Количество лайков
   
-  ridesCounter: string
+  - ridesCounter: string
   // Счетчик людей, которые катались по данному маршруту
   
-  views: string
+  - views: string
   // Количество просмотров
   
-  relatedRoutes: JSON
+  - relatedRoutes: JSON
   // ID похожих маршрутов
   
-  status: string
+  - status: string
   // Статус маршрута (одобрен, забанен...)
   
-  GUID: string
+  - GUID: string
   // Абсолютная ссылка на маршрут
 
