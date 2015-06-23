@@ -10,39 +10,39 @@ GET /routes/:id
 
 POST /routes 
 Параметры: 
-  authorID: string
+  0. authorID: string
   // ID автора маршрута
   
-  title: string
+  0.title: string
   // Заголовок маршрута
   
-  description: JSON
+  0.description: JSON
   // Полное описание маршрута: [ tags, text, startPointName, endPointName, distance, duration, climb, level ]
   
-  type: string
+  0.type: string
   // Тип маршрута (город, деревня и тд)
   
-  waypoints: JSON
+  0.waypoints: JSON
   // Точки по которым строится маршрут на карте: [ startPoint {name, lon, lat}, endPoint {name, lon, lat}, waypoint1 {name, lon, lat} ]
   
-  comments: JSON
+  0.comments: JSON
   // Код disqus
   
-  likes: string
+  0.likes: string
   // Количество лайков
   
-  ridesCounter: string
+  0.ridesCounter: string
   // Счетчик людей, которые катались по данному маршруту
   
-  views: string
+  0.views: string
   // Количество просмотров
   
-  relatedRoutes: JSON
+  0.relatedRoutes: JSON
   // ID похожих маршрутов
   
-  status: string
+  0.status: string
   // Статус маршрута (одобрен, забанен...)
   
-  GUID: string
+  0.GUID: string
   // Абсолютная ссылка на маршрут
 
